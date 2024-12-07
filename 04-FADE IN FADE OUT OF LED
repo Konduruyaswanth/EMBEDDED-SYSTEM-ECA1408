@@ -1,0 +1,38 @@
+
+#include <REGX52.h>
+2	+
+delay(unsigned int y)
+3	+
+{
+4	+
+    unsigned int i,j;
+5	+
+for(i=0;i<y;i++)
+6	+
+{
+7	+
+    for(j=0;j<1275;j++){}
+8	+
+}
+9	+
+} 
+10	+
+main()
+11	+
+{
+12	+
+    while(1)
+13	+
+{
+14	+
+        delay(100);
+15	+
+        P1_0 = 0;
+16	+
+        delay(100);
+17	+
+        P1_0 = 1;
+18	+
+    }
+19	+
+}
