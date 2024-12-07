@@ -1,0 +1,23 @@
+ORG 0000H
+2	+
+         UP: SETB P2.0
+3	+
+	   ACALL DELAY
+4	+
+	   CLR P2.0
+5	+
+	   ACALL DELAY
+6	+
+	   SJMP UP
+7	+
+DELAY: MOV R4,#35
+8	+
+         H1:MOV R3,#255
+9	+
+         H2:DJNZ R3,H2
+10	+
+	  DJNZ R4,H1
+11	+
+	  RET
+12	+
+	  END
